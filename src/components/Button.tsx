@@ -1,15 +1,23 @@
+import theme, {Typography} from "../theme";
+
+
 export interface ButtonProps {
     label: string;
-    size?: "medium" | "large";
+    className: string;
+    type?: Typography;
 }
 
 export default function Button({
     label,
-    size = "medium",
+    className,
+    type = "semibold",
 }: ButtonProps) {
-    return <button className="w-full md:w-64 py-2.5 px-4 bg-[#0876DD] rounded-md text-[white]">{label}</button>
+    //Unimos el estilo y el tamaño 
+    const combinedClassNames = [theme.typography[type], className].join(" ");
+    return (<button className={combinedClassNames}>{label} </button>)
 }
 
 
 
-// variable : tipo
+
+
