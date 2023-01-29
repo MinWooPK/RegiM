@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* mediaquery */
+@layer base {
+    body{
+        font-family: 'Archivo', sans-serif;
+    }
+}

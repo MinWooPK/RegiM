@@ -1,20 +1,26 @@
-import theme, {Typography} from "../theme";
+import theme, { Typography } from "../theme";
 
 export interface TextProps {
     text: string;
     type?: Typography;
     className?: string;
+    secondText?: string;
 }
 
 export default function Text({
     text,
     type = "regular",
     className = "",
+    secondText,
 }: TextProps) {
     const combinedClassNames = [theme.typography[type], className].join(" ");
-    return (<p className={ 
+    return (<p className={
         combinedClassNames
-    }>{text}</p>)
+    }>{text}
+        <span className=" text-Primary/100">
+            {secondText}
+        </span>
+    </p>)
 }
 
 

@@ -1,3 +1,4 @@
+
 const typography = {
     "bold": "font-bold",  //font-weight: 700
     "semibold": "font-semibold", //font-weight: 600
