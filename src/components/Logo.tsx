@@ -34,8 +34,8 @@ export default function LogoIcon({
 
    
     return (<div className='bg-white rounded-full w-14 h-14 md:w-20 md:h-20
-    flex items-center justify-center shadow-Box/Shadow/Logo'>
- <img src={logo[type]} alt="{logo[type]}" className='md:h-11 md:w-11' />
+    flex items-center justify-center shadow-Box/Shadow/Logo bg-White'>
+ <img src={logo[type]} alt="{logo[type]}" className='md:h-11 md:w-11 '  />
     </div>)
 }
 

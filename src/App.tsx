@@ -37,14 +37,14 @@ function App() {
           <div className='bg-Secondary/100	 
              h-[400px] w-[400px]
               rounded-full
-             left-[80px] absolute 
+             left-[-80px] absolute 
              md:h-[700px] md:w-[700px] md:left-[156px] md:bottom-12
              lg:z-[-1]
-            lg:left-[-120px] lg:bottom-[200px]
+            lg:left-[-120px] lg:bottom-50
              
              '>
           </div>
-          <div className='relative flex flex-row items-start gap-4 mx-5 md:mx-[72px] md:gap-[25px]'>
+          <div className='relative flex flex-row items-start gap-4 mx-5 md:mx-[72px] md:gap-[25px] '>
             <div className='flex flex-col gap-4 mt-20'>
               <Cards typeCard='Badge' />
               <Cards typeCard='RegistragionGraph' />
@@ -64,7 +64,7 @@ function App() {
       {/* Features */}
 
       <div className='h-0.5   mt-20 mb-14 bg-Neutral/200 mx-5' > </div>
-      <div className='flex flex-col gap-14 items-center'>
+      <div className='flex flex-col gap-14   items-center'>
         <div className='flex flex-col gap-1 md:gap-2'>
           <Text text='All-in-one Event Platform' type='semibold' className='text-4xl md:text-5xl lg:text-[56px] text-Neutral/900' />
           <Text text='Deliver an exceptional event experience' type='regular' className='text-base md:text-lg text-Neutral/700' />
@@ -80,15 +80,16 @@ function App() {
             <Text text='See in action (2min)' type='medium' className='text-sm md:text-base' />
           </button>
         </div>
-        <div className='flex  flex-col  gap-12 md:flex-row md:gap-6 ' >
-          <ItemIcon type='Event' color='Secondary/100' texth1='Event Metrics' textp='Track your ticket sales, attendees count and more with much ease.' />
-          <ItemIcon type='Registration' texth1='Registration & Ticketing' textp='Manage your Event registrations and ticket sales easier and receive payments instantly.' />
-          <ItemIcon type='Branded' color='Secondary/100' texth1='Branded Badges' textp='Create your custom branded badges for your events and get them printed.' />
-          <ItemIcon type='Organaiser' texth1='Oragniser App' textp='Manage your events at the palm of your hand with our Oragniser App.' />
-          <ItemIcon type='Attendee' color='Secondary/100' texth1='Attendee Engagement' textp='Engage with your attendees via email, surveys and much more.' />
-          <ItemIcon type='Calendar' texth1='Add to Calendar' textp='Effortless way to add your events to registered users calendars by 1-click.' />
+
+          <div className='flex  flex-col  justify-center gap-12 md:flex-row  md:flex-wrap md:gap-0 ' >
+            <ItemIcon type='Event' color='Secondary/100' texth1='Event Metrics' textp='Track your ticket sales, attendees count and more with much ease.' />
+            <ItemIcon type='Registration' texth1='Registration & Ticketing' textp='Manage your Event registrations and ticket sales easier and receive payments instantly.' />
+            <ItemIcon type='Branded' color='Secondary/100' texth1='Branded Badges' textp='Create your custom branded badges for your events and get them printed.' />
+            <ItemIcon type='Organaiser' texth1='Oragniser App' textp='Manage your events at the palm of your hand with our Oragniser App.' />
+            <ItemIcon type='Attendee' color='Secondary/100' texth1='Attendee Engagement' textp='Engage with your attendees via email, surveys and much more.' />
+            <ItemIcon type='Calendar' texth1='Add to Calendar' textp='Effortless way to add your events to registered users calendars by 1-click.' />
+          </div>
         </div>
-      </div>
 
 
       {/* Integration */}
@@ -97,13 +98,13 @@ function App() {
         <div className='bg-Secondary/100 h-[151px] rounded-b-full  mx-4 md:h-[311px] lg:h-[380px] lg:w-[720px] lg:mx-8 z-[-1]'></div>
       </div>
 
-      <div className='lg:flex lg:mx-[50px]   '>
-        <div className='flex flex-col  gap-4 mx-5 md:mx-[88px] lg:mt-10  lg:text-start lg:ml-[94px]  lg:mx-0  '>
+      <div className='lg:flex lg:mx-[40px]    '>
+        <div className='flex flex-col  gap-4 mx-5 md:mx-[88px] lg:mt-10  lg:text-start lg:ml-[94px] lg:mx-0 lg:mr-8 '>
           <Text text='Integrate with your favourite tools ' type='semibold' className='text-4xl md:text-5xl ' />
           <Text text='Connect RegiM with your most favorite sales and marketing tools' type='regular' className='text-base md:text-lg  ' />
         </div>
         <div className='flex flex-wrap items-center justify-center gap-8 mx-5
-            mt-10 mb-16  md:mt-20 md:mx-24 md:gap-[72px] lg:mt-0 lg:mb-[236px] lg:mx-0  z-10'>
+            mt-10 mb-16  md:mt-20 md:mx-24 md:gap-[72px] lg:mt-0 lg:mb-[236px] lg:mr-14 lg:mx-0'>
 
           <LogoIcon type='Rainbow' />
           <LogoIcon type='GP' />

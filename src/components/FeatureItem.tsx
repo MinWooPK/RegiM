@@ -50,7 +50,7 @@ export default function ItemIcon({
 
   
     return (
-        <div className='flex flex-row items-start  mx-5 gap-4 md:flex-col md:items-center md:w-[328px]'>
+        <div className='flex flex-row items-start  mx-5 gap-4 md:flex-col md:items-center md:w-[328px] md:mt-4'>
             <div className='pt-2.5'>
                 <div className={combinedClassNames}  >
                     <img src={icon[type]} alt={icon[type]} className='md:w-6' />
