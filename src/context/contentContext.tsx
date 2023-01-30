@@ -1,5 +1,8 @@
+import { type } from "os";
 import { createContext, ReactNode, useContext } from "react";
-import { FeaturesIcons, RingColorIcons } from "../components/FeatureItem";
+import { RingColorIcons } from "../components/FeatureIcon";
+import { FeaturesIcons } from "../components/Icon";
+import { Logo } from "../components/Logo";
 
 const textContent = {
     product_name: "RegiM",
@@ -20,7 +23,19 @@ const features: {
         { iconType: 'Calendar', featureColor: 'primary', title: 'Add to Calendar', description: 'Effortless way to add your events to registered users calendars by 1-click.', },
     ];
 
-const integrations: [] = [];
+const integrations: {
+    type: Logo,
+}[] = [
+        { type: 'Rainbow' },
+        { type: 'GP' },
+        { type: 'Monkey' },
+        { type: 'Iluminati' },
+        { type: 'Sun' },
+        { type: 'Group' },
+        { type: 'Frame' },
+
+    ]
+
 
 const defaultContextValue = {
     text: textContent,

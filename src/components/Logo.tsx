@@ -8,7 +8,6 @@ import GP from '../icon_SVG/GP.svg'
 import Group from '../icon_SVG/Group.svg'
 
 const logo = {
-
     "Frame": Frame,
     "Sun": Sun,
     "Rainbow": Rainbow,
@@ -16,13 +15,11 @@ const logo = {
     "GP": GP,
     "Group": Group,
     "Monkey": Monkey,
-
 }
 
-type Logo = keyof (typeof logo)
+export type Logo = keyof (typeof logo)
 
 export interface LogoProps {
-
     type?: Logo;
     className?: string;
 }

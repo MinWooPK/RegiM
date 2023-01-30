@@ -4,7 +4,6 @@ import logo from './icon_SVG/Logomark.svg';
 import RegiM from './icon_SVG/RegiM.svg';
 import desktop from './icon_SVG/video-thumbnail.svg'
 import playIcon from './icon_SVG/play-icon.svg'
-
 import FeatureItem from './components/FeatureItem';
 import Button from './components/Button';
 import Text from './components/Text';
@@ -17,6 +16,7 @@ function App() {
   const {
     text: textContent,
     features: featuresContent,
+    integrations: integrationsContent
   } = useContent();
 
   return (
@@ -80,7 +80,7 @@ function App() {
         <div className='flex  flex-col  justify-center gap-12 md:flex-row  md:flex-wrap md:gap-0 ' >
           {
             featuresContent.map((feature) => (
-              <FeatureItem type={feature.iconType} color={feature.featureColor} description={feature.description} title={feature.title} />
+              <FeatureItem key={feature.iconType} type={feature.iconType} color={feature.featureColor} description={feature.description} title={feature.title} />
             ))
           }
         </div>
@@ -98,17 +98,11 @@ function App() {
           <Text text='Connect RegiM with your most favorite sales and marketing tools' type='regular' className='text-base md:text-lg' />
         </div>
         <div className='flex flex-wrap items-center justify-center gap-8 mx-5 mt-10 mb-16  md:mt-20 md:mx-24 md:gap-[72px] lg:mt-0 lg:mb-[236px] lg:mr-14 lg:mx-0'>
-
-          <LogoIcon type='Rainbow' />
-          <LogoIcon type='GP' />
-          <LogoIcon type='Monkey' />
-          <LogoIcon type='Iluminati' />
-
-          <LogoIcon type='Sun' />
-          <LogoIcon type='Group' />
-          <LogoIcon type='Frame' />
-
-
+          {
+            integrationsContent.map((integration) => (
+              <LogoIcon key={integration.type} type={integration.type} />
+            ))
+          }
         </div>
       </div>
 

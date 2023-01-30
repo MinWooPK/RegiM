@@ -1,30 +1,6 @@
-import Attendee from '../icon_SVG/Attendee.svg'
-import Branded from '../icon_SVG/Branded.svg'
-import Calendar from '../icon_SVG/Calendar.svg'
-import Event from '../icon_SVG/Event.svg'
-import Registration from '../icon_SVG/Registration.svg'
-import Organaiser from '../icon_SVG/Organiser.svg'
+import FeatureIcon, { RingColorIcons } from "./FeatureIcon";
+import { FeaturesIcons } from "./Icon";
 
-// import theme, { Typography } from "../theme";
-
-
-const icon = {
-    "Attendee": Attendee,
-    "Branded": Branded,
-    "Calendar": Calendar,
-    "Event": Event,
-    "Registration": Registration,
-    "Organaiser": Organaiser,
-}
-// import IconImg from "./IconImg";
-const ringColor = {
-    "primary": 'ring-Primary/100',
-    "secondary": 'ring-Secondary/100',
-
-}
-
-export type FeaturesIcons = keyof (typeof icon)
-export type RingColorIcons = keyof (typeof ringColor)
 
 export interface FeaturesProps {
 
@@ -39,21 +15,13 @@ export default function FeatureItem({
     title,
     description,
     type = "Calendar",
-    className,
+    className = "",
     color = 'primary',
-
 }: FeaturesProps) {
-    const combinedClassNames = [ringColor[color], className = 'w-10 h-10 md:w-16 md:h-16 rounded-full ring-[8px] md:ring-[12px] ring-offset-0  flex items-center  justify-center'].join(" ");
-
 
     return (
         <div className='flex flex-row items-start  mx-5 gap-4 md:flex-col md:items-center md:w-[328px] md:mt-4'>
-            <div className='pt-2.5'>
-                <div className={combinedClassNames}  >
-                    {/* <IconImg /> */}
-                    <img src={icon[type]} alt={icon[type]} className='md:w-6' />
-                </div>
-            </div>
+            <FeatureIcon className={className} type={type} color={color} />
             <div className='flex flex-col  text-start  gap-2 md:text-center'>
                 <p className={
                     className = 'font-semibold text-xl md:text-2xl text-Neutral/900'
