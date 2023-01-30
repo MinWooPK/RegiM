@@ -36,11 +36,11 @@ export default function Cards({
 
 
     return (
-        <div >
+
                 <div  >
                     <img src={card[typeCard]} alt={card[typeCard]}  className=''  />
                 </div>
-        </div>
+       
     )
 }
 
