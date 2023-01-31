@@ -17,7 +17,7 @@ export default function Text({
     return (<p className={
         combinedClassNames
     }>{text}
-        <span className=" text-Primary/100">
+        <span className="px-1 first-letter:text-Primary/100">
             {secondText}
         </span>
     </p>)

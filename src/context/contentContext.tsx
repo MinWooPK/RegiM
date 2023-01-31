@@ -1,4 +1,3 @@
-import { type } from "os";
 import { createContext, ReactNode, useContext } from "react";
 import { RingColorIcons } from "../components/FeatureIcon";
 import { FeaturesIcons } from "../components/Icon";
@@ -7,6 +6,8 @@ import { Logo } from "../components/Logo";
 const textContent = {
     product_name: "RegiM",
     cta_button: "Get Early Access",
+    title_header: "Event Registration Reimagined",
+    title_CTA: "Create your event with RegiM"
 }
 
 const features: {

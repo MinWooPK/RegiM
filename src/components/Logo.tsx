@@ -7,6 +7,7 @@ import Iluminati from '../icon_SVG/Iluminati.svg'
 import GP from '../icon_SVG/GP.svg'
 import Group from '../icon_SVG/Group.svg'
 
+
 const logo = {
     "Frame": Frame,
     "Sun": Sun,

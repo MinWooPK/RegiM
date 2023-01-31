@@ -36,7 +36,7 @@ function App() {
 
       <div className='pt-[68px] md:pt-[100px] xl:flex xl:flex-row '>
         <div className='flex flex-col text-start mx-5 md:ml-10 md:mr-[136px]  lg:mx-[112px]'>
-          <Text text="Event Registration Reimagined" type='semibold' className='text-4xl md:text-6xl text-Neutral/900' />
+          <Text text={textContent.title_header} type='semibold' className='text-4xl md:text-6xl text-Neutral/900' />
           <Text text="Manage your event registrations hassle free and without any dependency with the technical team. Isn’t it sounds amazing?" type='regular' className='text-base md:text-lg pt-4 pb-10 text-Neutral/700' />
           <Button label={textContent.cta_button} className="w-40 py-3 px-4 bg-[#0876DD] rounded-md text-[white] lg:z-10" />
         </div>
@@ -109,7 +109,7 @@ function App() {
       {/* CTA */}
 
       <div className='flex flex-col gap-4 px-5 pt-16 items-center bg-Neutral/900 '>
-        <Text text='Create your event with RegiM' type='semibold' className='text-3xl md:text-4xl lg:text-5xl text-White' />
+        <Text text={textContent.title_CTA} type='semibold' className='text-3xl md:text-4xl lg:text-5xl text-White' />
         <Text text='Leveraging our virtual and live event experience, Hubilo offers everything you need to set up your next hybrid event from registration to executing a flawless event'
           type='regular' className=' text-base md:text-lg md:mx-6 text-White lg:mx-[300px]' />
         <Button label={textContent.cta_button} className="w-40  py-3 px-4 bg-[#0876DD] rounded-md

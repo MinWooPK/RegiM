@@ -1,5 +1,7 @@
 import Icon, { FeaturesIcons } from "./Icon";
 
+//Feature Item sin refactorizado
+
 const ringColor = {
     "primary": 'ring-Primary/100',
     "secondary": 'ring-Secondary/100',
@@ -24,7 +26,6 @@ export default function FeatureIcon({
     return (
         <div className='pt-2.5'>
             <div className={combinedClassNames}  >
-                {/* <IconImg /> */}
                 <Icon type={type} />
             </div>
         </div>
